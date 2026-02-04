@@ -7,26 +7,26 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 0.1.0+1
 
 environment:
-    sdk: ">=3.4.0 <4.0.0"
+    sdk: ">=3.8.0 <4.0.0"
 
 dependencies:
   flutter:
       sdk: flutter
 
   responsive_framework: ^1.5.1
-  bloc: ^9.0.0
-  flutter_bloc: ^9.1.0
+  bloc: ^9.2.0
+  flutter_bloc: ^9.1.1
   cupertino_icons: ^1.0.8
-  equatable: ^2.0.7
-  get_it: ^8.0.3
+  equatable: ^2.0.8
+  get_it: ^9.2.0
   dio: 5.7.0
-  hive: ^2.2.3
-  hive_flutter: ^1.1.0
+  hive_ce: ^2.19.3
+  hive_ce_flutter: ^2.3.4
   go_router: ^15.1.2
-  flex_color_scheme: ^8.2.0
+  flex_color_scheme: ^8.3.0
   flutter_form_builder: ^10.0.1
   form_builder_validators: ^11.1.2
-  json_annotation: ^4.9.0
+  json_annotation: ^4.10.0
 
   universal_html: ^2.2.4
   dartz: ^0.10.1
@@ -40,16 +40,16 @@ dependencies:
 dev_dependencies:
   flutter_test:
       sdk: flutter
-  build_runner: ^2.4.15
+  build_runner: ^2.4.13
   flutter_lints: ^5.0.0
   mocktail: ^1.0.4
-  bloc_test: ^10.0.0
-  json_serializable: ^6.9.4
+  # bloc_test: ^10.0.0
+  json_serializable: ^6.12.0
   http_mock_adapter: ^0.6.1
-  hive_generator: ^2.0.1
+  hive_ce_generator: ^1.11.1
 
-dependency_overrides:
-  source_gen: ^2.0.0
+# dependency_overrides:
+#   source_gen: ^2.0.0
 
 # The following section is specific to Flutter.
 flutter:

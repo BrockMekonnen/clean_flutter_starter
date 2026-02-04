@@ -1,8 +1,9 @@
+import 'package:clean_starter/_core/env.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 class Constants {
-  static const String apiBaseUrl = "http://0.0.0.0:8080/api";
+  static String get apiBaseUrl => Env.apiBase;
 
   static const String cachedTokenRef = 'CACHED_TOKEN';
   static const String tokenBoxName = 'CACHED_TOKEN_BOX';

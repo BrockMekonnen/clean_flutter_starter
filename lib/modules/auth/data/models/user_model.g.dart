@@ -8,7 +8,7 @@ part of 'user_model.dart';
 
 class UserModelAdapter extends TypeAdapter<UserModel> {
   @override
-  final int typeId = 1;
+  final typeId = 1;
 
   @override
   UserModel read(BinaryReader reader) {
@@ -63,11 +63,11 @@ class UserModelAdapter extends TypeAdapter<UserModel> {
 // **************************************************************************
 
 UserModel _$UserModelFromJson(Map<String, dynamic> json) => UserModel(
-      json['id'] as String,
-      json['firstName'] as String,
-      json['lastName'] as String,
-      json['phone'] as String,
-      json['email'] as String,
-      json['isEmailVerified'] as bool? ?? false,
-      (json['roles'] as List<dynamic>).map((e) => e as String).toList(),
-    );
+  json['id'] as String,
+  json['firstName'] as String,
+  json['lastName'] as String,
+  json['phone'] as String,
+  json['email'] as String,
+  json['isEmailVerified'] as bool? ?? false,
+  (json['roles'] as List<dynamic>).map((e) => e as String).toList(),
+);

@@ -1,17 +1,21 @@
+import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
 
 import '_init_modules.dart';
+import 'app_router.dart';
 import 'constants.dart';
 import 'database.dart';
 import 'di.dart';
 import 'http_client.dart';
 import 'initial_app_data.dart';
 import 'layout/adaptive_layout/adaptive_destination.dart';
+import 'logger.dart';
 import 'network_info.dart';
-import 'app_router.dart';
 
 class Bootstrap {
   static Future<void> init() async {
+    Log.init(isDebug: !kReleaseMode);
+
     //* Initiate Core
     di.registerSingleton<List<RouteBase>>([], instanceName: Constants.mainRouesDiKey);
     di.registerSingleton<List<AdaptiveDestination>>([],

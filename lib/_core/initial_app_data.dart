@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hive/hive.dart';
+import 'package:hive_ce/hive.dart';
 
 import 'constants.dart';
 import 'di.dart';
@@ -19,8 +19,7 @@ class InitialAppData {
       case 'Dark':
         return ThemeMode.dark;
       default:
-        return ThemeMode.dark;
-      // return ThemeMode.system;
+        return ThemeMode.system;
     }
   }
 }
